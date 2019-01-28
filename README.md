@@ -13,7 +13,7 @@ http://bit.ly/fb-frontend
 
 ## 회원가입 해주세요
 - [github](https://github.com)
-- [수강생 공부방](https://www.facebook.com/groups/248108926103831/
+- [수강생 공부방](https://www.facebook.com/groups/248108926103831/)
 
 ## 자습서
 - [Seomal.org](https://seomal.org)
