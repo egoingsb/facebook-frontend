@@ -8,6 +8,7 @@ http://bit.ly/fb-frontend
 ## 설치해주세요
 - [vscode](https://code.visualstudio.com/)
 - [github desktop](https://desktop.github.com/)
+- [web server for chrome](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb)
 
 ## 회원가입 해주세요
 - [github](https://github.com)
