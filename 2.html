@@ -6,28 +6,37 @@
     <meta charset="utf8">
     <style>
         h1 {
-            border-bottom:10px solid magenta;
+            border-bottom:10px solid rebeccapurple;
             padding:20px;
+            margin-bottom:0;
         }
         ol{
-            border-right:10px solid maroon;
-            width:150px;
+            border-right:10px solid cadetblue;
+            margin-top:0;
+        }
+        #container{
+            display:grid;
+            grid-template-columns: 150px 1fr;
         }
     </style>
 </head>
 
 <body>
     <h1><a href="index.html">WEB</a></h1>
-    <ol>
-        <li><a href="1.html">html</a></li>
-        <li><a href="2.html">css</a></li>
-        <li><a href="3.html">javascript</a></li>
-        <li><a href="4.html">Node</a>.js</li>
-    </ol>
-    <h2>CSS</h2>
-    CSS is Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore numquam libero perspiciatis nobis? Et
-    ducimus, eligendi sunt molestiae voluptatum cum aspernatur ullam, sed pariatur nemo expedita. Dolores illum rerum
-    pariatur.
+    <div id="container">
+        <ol>
+            <li><a href="1.html">html</a></li>
+            <li><a href="2.html">css</a></li>
+            <li><a href="3.html">javascript</a></li>
+            <li><a href="4.html">Node.js</a></li>
+        </ol>
+        <div>
+            <h2>CSS</h2>
+            CSS is Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore numquam libero perspiciatis nobis? Et
+            ducimus, eligendi sunt molestiae voluptatum cum aspernatur ullam, sed pariatur nemo expedita. Dolores illum rerum
+            pariatur.
+        </div>
+    </div>
 </body>
 
 </html>
