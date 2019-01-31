@@ -21,7 +21,4 @@ http://bit.ly/fb-frontend
 - [WEB2 JavaScript](https://opentutorials.org/course/3085)
 - [Nodejs](https://nodejs.org/en/)
 
-```
-<div id="disqus_thread"></div>
-<script>
 
