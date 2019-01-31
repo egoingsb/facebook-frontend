@@ -18,9 +18,20 @@
             <li><a href="4.html">Node.js</a></li>
         </ol>
         <div>
+            <input type="button" value="night" onclick="
+                var body = document.querySelector('body');
+                // 만약에 이 버튼의 value 값이 night라면
+                    body.style.backgroundColor = 'black';
+                    body.style.color = 'white';
+                    //이 버튼의 value 값을 day로 바꿔!
+                // night가 아니라면
+                    body.style.backgroundColor = '#001100';
+                    body.style.color = 'black';
+                    //이 버튼의 value 값을 night로 바꿔!
+            ">
             <input type="button" value="day" onclick="
                 var body = document.querySelector('body');
-                body.style.backgroundColor = 'white';
+                body.style.backgroundColor = '#001100';
                 body.style.color = 'black';
             ">
             <input type="button" value="night" onclick="
