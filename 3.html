@@ -5,6 +5,7 @@
     <title>WEB - JavaScript</title>
     <meta charset="utf8">
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -17,9 +18,12 @@
             <li><a href="4.html">Node</a>.js</li>
         </ol>
         <div>
+            <input type="text">
+            <input type="button" value="day">
             <input type="button" value="night" onclick="
-                document.querySelector('body').style.backgroundColor = 'black';
-                document.querySelector('body').style.color = 'white';    
+                var body = document.querySelector('body');
+                body.style.backgroundColor = 'black';
+                body.style.color = 'white';
             ">
             <h2>JavaScript</h2>
             JavaScript is Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, veniam.
