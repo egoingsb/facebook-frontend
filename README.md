@@ -9,6 +9,7 @@ http://bit.ly/fb-frontend
 - [vscode](https://code.visualstudio.com/)
 - [github desktop](https://desktop.github.com/)
 - [web server for chrome](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb)
+- [Nodejs](https://nodejs.org/en/)
 
 ## 회원가입 해주세요
 - [github](https://github.com)
@@ -19,6 +20,6 @@ http://bit.ly/fb-frontend
 - [WEB1 HTML & Internet](https://opentutorials.org/course/3084)
 - [WEB2 CSS](https://opentutorials.org/course/3086)
 - [WEB2 JavaScript](https://opentutorials.org/course/3085)
-- [Nodejs](https://nodejs.org/en/)
+
 
 
