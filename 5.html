@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>WEB - Database</title>
-        <meta charset="utf8">
-    </head>
-    <body>
-        <h1>WEB</h1>
+
+<head>
+    <title>WEB - Database</title>
+    <meta charset="utf8">
+    <style>
+        iframe {
+            display: block;
+        }
+
+        h1 {
+            border-bottom: 5px solid gray;
+            padding: 20px;
+        }
+
+        ol {
+            border-right: 5px solid maroon;
+        }
+
+        #container{
+            display:grid;
+            grid-template-columns: 150px 1fr;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color:red;">WEB</h1>
+
+    <div id="container">
+
         <ol>
             <li><a href="1.html">html</a></li>
             <li><a href="2.html">css</a></li>
@@ -13,29 +37,42 @@
             <li><a href="4.html">Node.js</a></li>
             <li><a href="5.html">database</a></li>
         </ol>
-        <h2>database</h2>
-        Database is Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe deserunt doloremque, necessitatibus ipsam in asperiores possimus modi impedit reprehenderit quas maiores voluptatem delectus laboriosam quod totam rem beatae, sunt cumque!
 
-        <div id="disqus_thread"></div>
-        <script>
+        <div>
+            <h2>database</h2>
+            Database is Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe deserunt doloremque,
+            necessitatibus ipsam in asperiores possimus modi impedit reprehenderit quas maiores voluptatem delectus
+            laboriosam quod totam rem beatae, sunt cumque!
 
-        /**
-        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-        /*
-        var disqus_config = function () {
-        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-        };
-        */
-        (function() { // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        s.src = 'https://disqustest88.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-        })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                                    
-    </body>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jot65Ks3WJc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+            <div id="disqus_thread"></div>
+            <script>
+
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+                /*
+                var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                */
+                (function () { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://disqustest88.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered
+                    by Disqus.</a></noscript>
+        </div>
+    </div>
+
+
+
+</body>
+
 </html>
