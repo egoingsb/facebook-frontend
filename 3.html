@@ -5,7 +5,6 @@
     <title>WEB - JavaScript</title>
     <meta charset="utf8">
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
@@ -18,16 +17,20 @@
             <li><a href="4.html">Node.js</a></li>
         </ol>
         <div>
-            <input type="button" value="night" onclick="
+            <input id="day_night" type="button" value="night" onclick="
                 var body = document.querySelector('body');
                 // 만약에 이 버튼의 value 값이 night라면
+                if(document.querySelector('#day_night').value === 'night') {
                     body.style.backgroundColor = 'black';
                     body.style.color = 'white';
                     //이 버튼의 value 값을 day로 바꿔!
-                // night가 아니라면
+                    document.querySelector('#day_night').value = 'day';
+                } else { // night가 아니라면
                     body.style.backgroundColor = '#001100';
                     body.style.color = 'black';
                     //이 버튼의 value 값을 night로 바꿔!
+                    document.querySelector('#day_night').value = 'night';
+                }
             ">
             <input type="button" value="day" onclick="
                 var body = document.querySelector('body');
@@ -43,9 +46,5 @@
             JavaScript is Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, veniam.
         </div>
     </div>
-    <script>
-        
-    </script>
 </body>
-
 </html>
