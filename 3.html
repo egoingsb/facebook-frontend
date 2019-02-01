@@ -17,30 +17,46 @@
             <li><a href="4.html">Node.js</a></li>
         </ol>
         <div>
+            <script>
+                  function toDay(){
+                    var self = document.querySelector('#day_night');
+                    var body = document.querySelector('body');
+                    body.style.backgroundColor = 'black';
+                    body.style.color = 'white';
+                    //이 버튼의 value 값을 day로 바꿔!
+                    self.value = 'day';
+                    //이 웹페이지에 있는 모든 a 태그의 폰트 색을 white로 바꿔!
+                    var list = document.querySelectorAll('a');
+                    var i = 0;
+                    while(i < list.length){
+                        list[i].style.color = 'white';
+                        i = i + 1;
+                    } 
+                  }
+
+                  function toNight(){
+                    var self = document.querySelector('#day_night');
+                    var body = document.querySelector('body');
+                    body.style.backgroundColor = 'white';
+                    body.style.color = 'black';
+                    //이 버튼의 value 값을 night로 바꿔!
+                    self.value = 'night';
+                    var list = document.querySelectorAll('a');
+                    var i = 0;
+                    while(i < list.length){
+                        list[i].style.color = 'black';
+                        i = i + 1;
+                    }
+                  }
+            </script>
             <input id="day_night" type="button" value="night" onclick="
                 var body = document.querySelector('body');
                 // 만약에 이 버튼의 value 값이 night라면
                 if(this.value === 'night') {
-                    body.style.backgroundColor = 'black';
-                    body.style.color = 'white';
-                    //이 버튼의 value 값을 day로 바꿔!
-                    this.value = 'day';
+                    toDay();
                 } else { // night가 아니라면
-                    body.style.backgroundColor = '#001100';
-                    body.style.color = 'black';
-                    //이 버튼의 value 값을 night로 바꿔!
-                    this.value = 'night';
+                    toNight();
                 }
-            ">
-            <input type="button" value="day" onclick="
-                var body = document.querySelector('body');
-                body.style.backgroundColor = '#001100';
-                body.style.color = 'black';
-            ">
-            <input type="button" value="night" onclick="
-                var body = document.querySelector('body');
-                body.style.backgroundColor = 'black';
-                body.style.color = 'white';
             ">
             <h2>JavaScript</h2>
             JavaScript is Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, veniam.
