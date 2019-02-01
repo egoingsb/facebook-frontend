@@ -19,7 +19,7 @@
         <div>
             <script>
 
-                function toggleDayNight(mode){
+                function toggleDayNight(self, mode){
                     if(mode === 'day'){
                         var backgroundColor = 'white';
                         var fontColor = 'black';
@@ -29,7 +29,6 @@
                         var fontColor = 'white';
                         var label = 'day';
                     }
-                    var self = document.querySelector('#day_night');
                     var body = document.querySelector('body');
                     body.style.backgroundColor = backgroundColor;
                     body.style.color = fontColor;
@@ -45,15 +44,7 @@
                   }
             </script>
             <input id="day_night" type="button" value="night" onclick="
-                var body = document.querySelector('body');
-                // 만약에 이 버튼의 value 값이 night라면
-                if(this.value === 'night') {
-                    // toDay();
-                    toggleDayNight('night');
-                } else { // night가 아니라면
-                    // toNight();
-                    toggleDayNight('day');
-                }
+                toggleDayNight(this, this.value);
             ">
             <h2>JavaScript</h2>
             JavaScript is Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, veniam.
