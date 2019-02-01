@@ -18,44 +18,41 @@
         </ol>
         <div>
             <script>
-                  function toDay(){
+
+                function toggleDayNight(mode){
+                    if(mode === 'day'){
+                        var backgroundColor = 'white';
+                        var fontColor = 'black';
+                        var label = 'night';
+                    } else {
+                        var backgroundColor = 'black';
+                        var fontColor = 'white';
+                        var label = 'day';
+                    }
                     var self = document.querySelector('#day_night');
                     var body = document.querySelector('body');
-                    body.style.backgroundColor = 'black';
-                    body.style.color = 'white';
+                    body.style.backgroundColor = backgroundColor;
+                    body.style.color = fontColor;
                     //이 버튼의 value 값을 day로 바꿔!
-                    self.value = 'day';
+                    self.value = label;
                     //이 웹페이지에 있는 모든 a 태그의 폰트 색을 white로 바꿔!
                     var list = document.querySelectorAll('a');
                     var i = 0;
                     while(i < list.length){
-                        list[i].style.color = 'white';
+                        list[i].style.color = fontColor;
                         i = i + 1;
                     } 
-                  }
-
-                  function toNight(){
-                    var self = document.querySelector('#day_night');
-                    var body = document.querySelector('body');
-                    body.style.backgroundColor = 'white';
-                    body.style.color = 'black';
-                    //이 버튼의 value 값을 night로 바꿔!
-                    self.value = 'night';
-                    var list = document.querySelectorAll('a');
-                    var i = 0;
-                    while(i < list.length){
-                        list[i].style.color = 'black';
-                        i = i + 1;
-                    }
                   }
             </script>
             <input id="day_night" type="button" value="night" onclick="
                 var body = document.querySelector('body');
                 // 만약에 이 버튼의 value 값이 night라면
                 if(this.value === 'night') {
-                    toDay();
+                    // toDay();
+                    toggleDayNight('night');
                 } else { // night가 아니라면
-                    toNight();
+                    // toNight();
+                    toggleDayNight('day');
                 }
             ">
             <h2>JavaScript</h2>
